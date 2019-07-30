@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ReactiveUI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -8,32 +9,33 @@ using System.Threading.Tasks;
 
 namespace ReactiveUI_MVVM.Models
 {
-    public class Person : INotifyPropertyChanged
+    public class Person : ReactiveObject
     {
         private string _FirstName;
         public string FirstName
         {
-            get { return _FirstName; }
-            set
-            {
-                if (value == _FirstName) return;
-                _FirstName = value;
-                OnPropertyChanged();
-                OnPropertyChanged("FullName");
-            }
+            get => _FirstName;
+            set => this.RaiseAndSetIfChanged(ref _FirstName, value);
         }
 
         private string _LastName;
         public string LastName
         {
-            get { return _LastName; }
-            set
-            {
-                if (value == _LastName) return;
-                _LastName = value;
-                OnPropertyChanged();
-                OnPropertyChanged("FullName");
-            }
+            get => _LastName;
+            set => this.RaiseAndSetIfChanged(ref _LastName, value);
+        }
+
+               
+        private string _FullName;
+        public string FullName
+        {
+            get => _FullName;
+            set => this.RaiseAndSetIfChanged(ref _FullName, value);
+        }
+
+        private void UpdateFullName()
+        {
+            FullName = FirstName + " " + LastName;
         }
 
 
@@ -41,14 +43,8 @@ namespace ReactiveUI_MVVM.Models
         {
             _FirstName = FirstName;
             _LastName = LastName;
+            this.WhenAnyValue(person => person.FirstName, person => person.LastName).Subscribe(_ => UpdateFullName());
         }
-
-        public string FullName
-        {
-            get { return FirstName + " " + LastName; }
-
-        }
-
 
         public static List<Person> GetPersons()
         {
@@ -60,15 +56,6 @@ namespace ReactiveUI_MVVM.Models
             return result;
         }
 
-
-
-
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
 
     }
 }
