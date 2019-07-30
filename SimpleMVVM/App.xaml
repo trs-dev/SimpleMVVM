@@ -1,8 +1,8 @@
-﻿<Application x:Class="SimpleMVVM.App"
+﻿<Application x:Class="ClassicMVVM.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:SimpleMVVM"
-             StartupUri="MainWindow.xaml">
+             xmlns:local="clr-namespace:ClassicMVVM"
+             StartupUri="Views/MainWindow.xaml">
     <Application.Resources>
          
     </Application.Resources>

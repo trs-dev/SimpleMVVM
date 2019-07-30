@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SimpleMVVM.Properties
+namespace ClassicMVVM.Properties
 {
 
 
