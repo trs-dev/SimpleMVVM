@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicMVVM", "ClassicMVVM\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactiveUI_MVVM", "ReactiveUI_MVVM\ReactiveUI_MVVM.csproj", "{8008F340-8F18-45BC-A99C-EA39861A5948}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactiveUI_Fody_MVVM", "ReactiveUI_Fody_MVVM\ReactiveUI_Fody_MVVM.csproj", "{F88B5AF7-4EE0-40F5-B5B4-B2C9AF7664EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8008F340-8F18-45BC-A99C-EA39861A5948}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8008F340-8F18-45BC-A99C-EA39861A5948}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8008F340-8F18-45BC-A99C-EA39861A5948}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F88B5AF7-4EE0-40F5-B5B4-B2C9AF7664EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F88B5AF7-4EE0-40F5-B5B4-B2C9AF7664EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F88B5AF7-4EE0-40F5-B5B4-B2C9AF7664EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F88B5AF7-4EE0-40F5-B5B4-B2C9AF7664EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
