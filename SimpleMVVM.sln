@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicMVVM", "ClassicMVVM\ClassicMVVM.csproj", "{986C263C-D0B1-443F-BE64-9F64BC05D9D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactiveUI_MVVM", "ReactiveUI_MVVM\ReactiveUI_MVVM.csproj", "{8008F340-8F18-45BC-A99C-EA39861A5948}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{986C263C-D0B1-443F-BE64-9F64BC05D9D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{986C263C-D0B1-443F-BE64-9F64BC05D9D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{986C263C-D0B1-443F-BE64-9F64BC05D9D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8008F340-8F18-45BC-A99C-EA39861A5948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8008F340-8F18-45BC-A99C-EA39861A5948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8008F340-8F18-45BC-A99C-EA39861A5948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8008F340-8F18-45BC-A99C-EA39861A5948}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
